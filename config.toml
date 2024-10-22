@@ -1,0 +1,11 @@
+[wallet]
+mnemonic = ""
+count = 50
+keys = []
+
+[network]
+rpc = [
+    'https://cold-hanni-fast-mainnet.helius-rpc.com/'
+]
+
+sleep = 2000
