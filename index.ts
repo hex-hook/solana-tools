@@ -73,6 +73,7 @@ export async function queryMultipleBalance(accounts: PublicKey[]) {
         }
     }
     console.table(res)
+    return res
 }
 
 
@@ -90,8 +91,8 @@ export async function queryMultipleBalance(accounts: PublicKey[]) {
 export async function queryMultipleTokenBalance(mint: PublicKey, accounts: PublicKey[]) {
     const accountGroups = group(accounts.map(item => getAssociatedTokenAddressSync(mint, item)), 50)
     const res = []
-    for (const accounts of accountGroups) {
-        const balances = await connection.getMultipleParsedAccounts(accounts)
+    for (const tokenAccounts of accountGroups) {
+        const balances = await connection.getMultipleParsedAccounts(tokenAccounts)
         for (let i = 0; i < balances.value.length; i++) {
             const item = balances.value[i]
             const address = accounts[i].toBase58()
@@ -106,6 +107,7 @@ export async function queryMultipleTokenBalance(mint: PublicKey, accounts: Publi
     }
     console.log(`mint: ${mint.toBase58()}`)
     console.table(res)
+    return res
 }
 
 

@@ -1,0 +1,551 @@
+{
+    "address": "4goa1PGT9aVxtr7ue5DJpF7BTmVB6vSdJ1ATCRDsvq2f",
+    "metadata": {
+        "name": "fuck_0xsun",
+        "version": "0.1.0",
+        "spec": "0.1.0",
+        "description": "Created with Anchor"
+    },
+    "instructions": [
+        {
+            "name": "fuck",
+            "discriminator": [
+                167,
+                39,
+                216,
+                197,
+                254,
+                16,
+                212,
+                224
+            ],
+            "accounts": [
+                {
+                    "name": "mint",
+                    "writable": true
+                },
+                {
+                    "name": "config",
+                    "writable": true
+                },
+                {
+                    "name": "user_ata",
+                    "writable": true
+                },
+                {
+                    "name": "user_state",
+                    "writable": true,
+                    "pda": {
+                        "seeds": [
+                            {
+                                "kind": "const",
+                                "value": [
+                                    117,
+                                    115,
+                                    101,
+                                    114,
+                                    95,
+                                    115,
+                                    116,
+                                    97,
+                                    116,
+                                    101
+                                ]
+                            },
+                            {
+                                "kind": "account",
+                                "path": "signer"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "signer",
+                    "writable": true,
+                    "signer": true
+                },
+                {
+                    "name": "mint_authority",
+                    "pda": {
+                        "seeds": [
+                            {
+                                "kind": "const",
+                                "value": [
+                                    109,
+                                    105,
+                                    110,
+                                    116,
+                                    95,
+                                    97,
+                                    117,
+                                    116,
+                                    104,
+                                    111,
+                                    114,
+                                    105,
+                                    116,
+                                    121
+                                ]
+                            },
+                            {
+                                "kind": "account",
+                                "path": "config"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "instructions_sysvar",
+                    "address": "Sysvar1nstructions1111111111111111111111111"
+                },
+                {
+                    "name": "associated_token_program",
+                    "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
+                },
+                {
+                    "name": "token_program",
+                    "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+                },
+                {
+                    "name": "system_program",
+                    "address": "11111111111111111111111111111111"
+                },
+                {
+                    "name": "rent",
+                    "address": "SysvarRent111111111111111111111111111111111"
+                }
+            ],
+            "args": []
+        },
+        {
+            "name": "fuck_100",
+            "discriminator": [
+                57,
+                138,
+                248,
+                128,
+                62,
+                124,
+                132,
+                219
+            ],
+            "accounts": [
+                {
+                    "name": "mint",
+                    "writable": true
+                },
+                {
+                    "name": "config",
+                    "writable": true
+                },
+                {
+                    "name": "user_ata",
+                    "writable": true
+                },
+                {
+                    "name": "user_state",
+                    "writable": true,
+                    "pda": {
+                        "seeds": [
+                            {
+                                "kind": "const",
+                                "value": [
+                                    117,
+                                    115,
+                                    101,
+                                    114,
+                                    95,
+                                    115,
+                                    116,
+                                    97,
+                                    116,
+                                    101
+                                ]
+                            },
+                            {
+                                "kind": "account",
+                                "path": "signer"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "signer",
+                    "writable": true,
+                    "signer": true
+                },
+                {
+                    "name": "mint_authority",
+                    "pda": {
+                        "seeds": [
+                            {
+                                "kind": "const",
+                                "value": [
+                                    109,
+                                    105,
+                                    110,
+                                    116,
+                                    95,
+                                    97,
+                                    117,
+                                    116,
+                                    104,
+                                    111,
+                                    114,
+                                    105,
+                                    116,
+                                    121
+                                ]
+                            },
+                            {
+                                "kind": "account",
+                                "path": "config"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "fee_receiver",
+                    "writable": true
+                },
+                {
+                    "name": "instructions_sysvar",
+                    "address": "Sysvar1nstructions1111111111111111111111111"
+                },
+                {
+                    "name": "associated_token_program",
+                    "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
+                },
+                {
+                    "name": "token_program",
+                    "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+                },
+                {
+                    "name": "system_program",
+                    "address": "11111111111111111111111111111111"
+                },
+                {
+                    "name": "rent",
+                    "address": "SysvarRent111111111111111111111111111111111"
+                }
+            ],
+            "args": []
+        },
+        {
+            "name": "fuck_everyday",
+            "discriminator": [
+                231,
+                241,
+                105,
+                173,
+                254,
+                169,
+                106,
+                119
+            ],
+            "accounts": [
+                {
+                    "name": "mint",
+                    "writable": true
+                },
+                {
+                    "name": "config",
+                    "writable": true
+                },
+                {
+                    "name": "user_ata",
+                    "writable": true
+                },
+                {
+                    "name": "user_state",
+                    "writable": true,
+                    "pda": {
+                        "seeds": [
+                            {
+                                "kind": "const",
+                                "value": [
+                                    117,
+                                    115,
+                                    101,
+                                    114,
+                                    95,
+                                    115,
+                                    116,
+                                    97,
+                                    116,
+                                    101
+                                ]
+                            },
+                            {
+                                "kind": "account",
+                                "path": "signer"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "signer",
+                    "writable": true,
+                    "signer": true
+                },
+                {
+                    "name": "mint_authority",
+                    "pda": {
+                        "seeds": [
+                            {
+                                "kind": "const",
+                                "value": [
+                                    109,
+                                    105,
+                                    110,
+                                    116,
+                                    95,
+                                    97,
+                                    117,
+                                    116,
+                                    104,
+                                    111,
+                                    114,
+                                    105,
+                                    116,
+                                    121
+                                ]
+                            },
+                            {
+                                "kind": "account",
+                                "path": "config"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "fee_receiver",
+                    "writable": true
+                },
+                {
+                    "name": "instructions_sysvar",
+                    "address": "Sysvar1nstructions1111111111111111111111111"
+                },
+                {
+                    "name": "associated_token_program",
+                    "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
+                },
+                {
+                    "name": "token_program",
+                    "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+                },
+                {
+                    "name": "system_program",
+                    "address": "11111111111111111111111111111111"
+                },
+                {
+                    "name": "rent",
+                    "address": "SysvarRent111111111111111111111111111111111"
+                }
+            ],
+            "args": []
+        },
+        {
+            "name": "fuckfuck",
+            "discriminator": [
+                107,
+                139,
+                63,
+                121,
+                237,
+                61,
+                27,
+                179
+            ],
+            "accounts": [
+                {
+                    "name": "user_state",
+                    "writable": true
+                },
+                {
+                    "name": "signer",
+                    "writable": true,
+                    "signer": true
+                },
+                {
+                    "name": "system_program",
+                    "address": "11111111111111111111111111111111"
+                }
+            ],
+            "args": []
+        },
+        {
+            "name": "fuckfuckfuck",
+            "discriminator": [
+                28,
+                137,
+                31,
+                174,
+                215,
+                190,
+                110,
+                250
+            ],
+            "accounts": [
+                {
+                    "name": "mint",
+                    "writable": true
+                },
+                {
+                    "name": "config",
+                    "writable": true
+                },
+                {
+                    "name": "deployer_ata",
+                    "writable": true
+                },
+                {
+                    "name": "signer",
+                    "writable": true,
+                    "signer": true
+                },
+                {
+                    "name": "mint_authority",
+                    "pda": {
+                        "seeds": [
+                            {
+                                "kind": "const",
+                                "value": [
+                                    109,
+                                    105,
+                                    110,
+                                    116,
+                                    95,
+                                    97,
+                                    117,
+                                    116,
+                                    104,
+                                    111,
+                                    114,
+                                    105,
+                                    116,
+                                    121
+                                ]
+                            },
+                            {
+                                "kind": "account",
+                                "path": "config"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "associated_token_program",
+                    "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
+                },
+                {
+                    "name": "token_program",
+                    "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+                },
+                {
+                    "name": "system_program",
+                    "address": "11111111111111111111111111111111"
+                },
+                {
+                    "name": "rent",
+                    "address": "SysvarRent111111111111111111111111111111111"
+                }
+            ],
+            "args": []
+        }
+    ],
+    "accounts": [
+        {
+            "name": "Config",
+            "discriminator": [
+                155,
+                12,
+                170,
+                224,
+                30,
+                250,
+                204,
+                130
+            ]
+        },
+        {
+            "name": "UserState",
+            "discriminator": [
+                72,
+                177,
+                85,
+                249,
+                76,
+                167,
+                186,
+                126
+            ]
+        }
+    ],
+    "errors": [
+        {
+            "code": 6000,
+            "name": "MintCapExceeded",
+            "msg": "Mint cap exceeded."
+        },
+        {
+            "code": 6001,
+            "name": "FuckSun",
+            "msg": "FUCK 0xSUN"
+        }
+    ],
+    "types": [
+        {
+            "name": "Config",
+            "type": {
+                "kind": "struct",
+                "fields": [
+                    {
+                        "name": "mint",
+                        "type": "pubkey"
+                    },
+                    {
+                        "name": "owner",
+                        "type": "pubkey"
+                    },
+                    {
+                        "name": "total_mint_cap",
+                        "type": "u64"
+                    },
+                    {
+                        "name": "per_mint_amount",
+                        "type": "u64"
+                    },
+                    {
+                        "name": "total_minted",
+                        "type": "u64"
+                    },
+                    {
+                        "name": "current_slot",
+                        "type": "u64"
+                    },
+                    {
+                        "name": "mints_in_slot",
+                        "type": "u64"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "UserState",
+            "type": {
+                "kind": "struct",
+                "fields": [
+                    {
+                        "name": "last_mint_slot",
+                        "type": "u64"
+                    },
+                    {
+                        "name": "mint_count",
+                        "type": "u64"
+                    }
+                ]
+            }
+        }
+    ]
+}
