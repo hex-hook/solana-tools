@@ -5,7 +5,12 @@ keys = []
 
 [network]
 rpc = [
-    'https://cold-hanni-fast-mainnet.helius-rpc.com/'
+    # devnet
+    "https://api.devnet.solana.com",
+    # testnet
+    "https://api.testnet.solana.com",
+    # mainnet-beta
+    "https://api.mainnet-beta.solana.com/"
 ]
 
 sleep = 2000

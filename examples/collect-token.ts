@@ -1,17 +1,19 @@
-import { collectToken, fromMnemonic, queryMultipleTokenBalance } from '@/index'
 import config from '@/config.toml'
-import { PublicKey } from '@solana/web3.js'
+import { collectAllTokenAndCloseAccount, queryMultipleTokenBalance } from '@/token'
+import { fromMnemonic } from '@/utils'
+import { Connection, PublicKey } from '@solana/web3.js'
 
-async function collectDuck() {
+async function main() {
     const mnemonic = config.wallet.mnemonic
-    const count = config.wallet.count
+    const count = 10
     const wallets = Array.from({ length: count }, (_, i) => fromMnemonic(mnemonic, i))
+    const connection = new Connection(config.network.rpc[0])
 
-    const duckMint = new PublicKey('4ALKS249vAS3WSCUxXtHJVZN753kZV6ucEQC41421Rka')
-    await queryMultipleTokenBalance(duckMint, wallets.map(item => item.publicKey))
+    const mint = new PublicKey('4AAE7YJmdBwZ6nzx8vXURgphmt1JgbixFzRYtELCaJwz')
+    await queryMultipleTokenBalance(connection, mint, wallets.map(item => item.publicKey))
     // change target wallet address
-    await collectToken(duckMint, wallets[1], wallets, new PublicKey('ELECmNRLpd358DYJzLgPrKjdNVrTzX1NUfbMwU8mEaxN'))
+    await collectAllTokenAndCloseAccount(connection, mint, wallets[1], wallets, new PublicKey('ELECmNRLpd358DYJzLgPrKjdNVrTzX1NUfbMwU8mEaxN'))
 
-    await queryMultipleTokenBalance(duckMint, wallets.map(item => item.publicKey))
+    await queryMultipleTokenBalance(connection, mint, wallets.map(item => item.publicKey))
 }
-collectDuck()
+main()

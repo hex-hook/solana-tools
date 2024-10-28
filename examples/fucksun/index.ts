@@ -3,8 +3,7 @@ import { Program, AnchorProvider, Wallet, type Idl } from "@coral-xyz/anchor";
 import { getAssociatedTokenAddressSync } from "@solana/spl-token";
 import config from '@/config.toml'
 import idl from '@/examples/fucksun/idl.json'
-import { fromMnemonic} from "@/index";
-import { sleep } from "bun";
+import { fromMnemonic, sleep } from "@/utils";
 
 const MINT = new PublicKey('7g6qxcgqsDCFnoSheY2qNqFQTPfUC7gW6XjPgxPSkn21')
 const AUTH = new PublicKey('396e8hJkEXeB2wAGgrc8p13NqxJ3KhWCRMKWrHXyUhXi')
